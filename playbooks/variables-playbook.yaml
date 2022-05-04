@@ -1,0 +1,8 @@
+- name: variable playbook example
+  hosts: all
+  vars:
+    URL: "www.goolge.com"  
+  tasks:
+   - name: print message
+     debug:
+        msg: "welcome to {{URL}}"
