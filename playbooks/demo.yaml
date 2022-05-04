@@ -3,4 +3,17 @@ Date: 25/04/2022
 for Account: 12373245578
 Account Type: Saving
 ChequeBook Issued: true
- 
+Nominees:
+    - Brother
+    - father
+
+PurchaseList:
+     - Fruits: [banana, apple, pineapple]
+     - veg:
+        - carror
+        - onion
+        - potato
+     - Groceries:
+          sugar
+          wheet
+          
