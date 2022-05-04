@@ -2,7 +2,8 @@
   hosts: all
   vars:
     URL: "www.goolge.com"  
+    VAR1: "Hitesh Mankar"
   tasks:
    - name: print message
      debug:
-        msg: "welcome to {{URL}}"
+        msg: "welcome to {{ URL }}, My Name is{{ VAR1 }}"
