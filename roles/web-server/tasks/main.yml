@@ -9,7 +9,7 @@
         name: httpd
         enabled: true
     
-    - name: Deploy Website
+ - name: Deploy Website
       copy:
         src: ./index.html
         dest: /var/www/html/index.html
