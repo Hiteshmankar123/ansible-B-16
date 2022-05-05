@@ -1,7 +1,7 @@
  - name: install package
      yum:
         state: latest
-        name: httpd
+    - name: httpd
     
     - name: start httpd daemon
       service:
