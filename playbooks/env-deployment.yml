@@ -1,4 +1,4 @@
-- name: roles Playbook
+- name: Roles Playbook
   hosts: all
   become: true
   roles:
