@@ -1,5 +1,0 @@
-- name: Roles Playbook
-  hosts: all
-  become: true
-  roles:
-     - web-server
