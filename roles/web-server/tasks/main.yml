@@ -1,5 +1,5 @@
  - name: install package
-      yum:
+     yum:
         state: latest
         name: httpd
     
