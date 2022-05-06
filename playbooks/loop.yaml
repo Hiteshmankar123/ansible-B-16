@@ -1,1 +1,2 @@
-- name: Loop in ansible_distribution
+- name: Loop in ansible
+hosts
