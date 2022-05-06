@@ -1,1 +1,1 @@
-- name: Loop in ansibel
+- name: Loop in ansible_distribution
