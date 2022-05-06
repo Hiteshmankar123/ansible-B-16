@@ -1,2 +1,4 @@
 - name: Loop in ansible
 hosts: all
+tasks:
+   
