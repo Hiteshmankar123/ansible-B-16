@@ -11,5 +11,4 @@
 - name: Extract tomcat to /opt
   unarchive:
       src: /opt/
-
       dest:     
