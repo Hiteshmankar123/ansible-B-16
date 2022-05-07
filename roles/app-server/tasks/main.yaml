@@ -1,1 +1,2 @@
-- name: install Java
+- name: Install Java
+  yum:
