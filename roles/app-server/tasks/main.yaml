@@ -21,4 +21,3 @@
   copy:
     src: ./student.war
     dest: /opt/{{TOMCAT_NAME}}/webapps/student.war
-    
