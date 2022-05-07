@@ -14,4 +14,4 @@
       dest: /opt/
 
 - name: start service
-  shell: /opt/{{Tomcat_}}     
+  shell: /opt/{{Tomcat_Name}}     
