@@ -10,7 +10,7 @@
      
 - name: Extract tomcat to /opt
   unarchive:
-      src: {{Tom}}
+      src: {{Tomcat_zip}}
       dest: /opt/
 
      
