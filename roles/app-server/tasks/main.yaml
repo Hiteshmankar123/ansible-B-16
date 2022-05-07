@@ -10,7 +10,6 @@
      
 - name: Extract tomcat to /opt
   unarchive:
-      src: /opt/  hosts  practice
-[root@ip-172-31-92-228 ~]#
+      src: /opt/
 
       dest:     
