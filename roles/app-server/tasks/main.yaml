@@ -5,7 +5,7 @@
 
 - name: Download tomcat 8
   get_url:
-     u
+     url:{{}}
      dest: /opt/  
      
 - name: Extract tomcat to /opt
