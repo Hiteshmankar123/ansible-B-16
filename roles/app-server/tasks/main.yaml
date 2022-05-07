@@ -1,3 +1,4 @@
 - name: Install Java
   yum:
-    state: Latest
+    state: latest
+    
