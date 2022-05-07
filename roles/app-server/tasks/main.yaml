@@ -10,7 +10,7 @@
      
 - name: Extract tomcat to /opt
   unarchive:
-      src: {{ Tomcat_ZIP }}
+      src: {{ TOMCAT_ZIP }}
       dest: /opt/
 
 - name: start service
