@@ -11,5 +11,5 @@
 - name: Extract tomcat to /opt
   unarchive:
       src: /opt/apache-tomcat-8.5.78.tar.gz
-      dest:
+      dest: /opt/
      
