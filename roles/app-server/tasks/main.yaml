@@ -1,7 +1,10 @@
 - name: Install Java
   yum:
     state: latest
-    name: java
+    name: '{{ item }}'
+  loop:
+    - java
+    - mysql
 
 - name: Download tomcat 8
   get_url:
@@ -14,11 +17,32 @@
     dest: /opt/
     remote_src: true
 
-- name: start service
-  shell: /opt/{{TOMCAT_NAME}}/bin/catalina.sh start
-
 - name: Deploy webapp
   copy:
     src: ./student.war
-    dest: /opt/{{TOMCAT_NAME}}/webapps/student.war
-    #<h1> hello world
+    dest: /opt/{{TOMCAT_DIR}}/webapps/student.war
+
+- name: Upload configuration file
+  template:
+    src: ./context.xml
+    dest: /opt/{{TOMCAT_DIR}}/conf/context.xml
+
+- name: Store my-sql connector in lib
+  get_url:
+    url: '{{MYSQL_LIB_URL}}'
+    dest: /opt/{{TOMCAT_DIR}}/lib/
+
+- name: Create Daemon for tomcat
+  copy:
+    src: ./tomcat-init
+    dest: /etc/init.d/tomcatd
+    mode: '0777'
+
+- name: Reload the daemon
+  shell: systemctl daemon-reload
+
+- name: restart tomcat
+  service:
+    name: tomcatd
+    state: restarted 
+    enabled: true
