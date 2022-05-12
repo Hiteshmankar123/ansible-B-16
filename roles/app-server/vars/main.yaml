@@ -1,0 +1,4 @@
+TOMCAT_URL: https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.78/bin/apache-tomcat-8.5.78.tar.gz
+TOMCAT_ZIP: "{{ TOMCAT_URL.split('/') | last }}"
+TOMCAT_DIR: "{{ TOMCAT_ZIP | regex_replace('.tar.gz','') }}"
+MYSQL_LIB_URL: https://s3-us-west-2.amazonaws.com/studentapi-cit/mysql-connector.jar
