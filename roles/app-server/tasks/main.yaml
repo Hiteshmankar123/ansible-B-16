@@ -6,10 +6,10 @@
     - java
     - mysql
 
-#- name: Download tomcat 8
-#- get_url:
-#    url: "{{ TOMCAT_URL }}"
-#    dest: /opt/
+- name: Download tomcat 8
+- get_url:
+    url: "{{ TOMCAT_URL }}"
+    dest: /opt/
 
 - name: Extract tomcat to /opt
   unarchive:
