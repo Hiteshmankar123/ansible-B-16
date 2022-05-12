@@ -6,7 +6,7 @@
     - java
     - mysql
 
-- name: Downlaod tomcat 8
+- name: Downlaod tomcat8
 - get_url:
     url: "{{ TOMCAT_URL }}"
     dest: /opt/
